@@ -1,0 +1,29 @@
+/* src/app/globals.css */
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- ONE source of truth for your brand color --- */
+:root {
+  --brand: #a89078;
+  --cream: #efe4d9; /* light brown you want */
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Force light theme */
+html,
+body {
+  @apply bg-white text-zinc-900;
+}
+
+/* Optional utilities you already used */
+@layer utilities {
+  .snap-container {
+    scroll-snap-type: y mandatory;
+  }
+  .snap-section {
+    scroll-snap-align: start;
+  }
+}
