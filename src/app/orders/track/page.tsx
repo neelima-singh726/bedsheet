@@ -75,5 +75,3 @@ function TrackOrderInner() {
     </main>
   );
 }
-
-
