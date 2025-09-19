@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
-import Twilio from 'twilio';
+// import Twilio from 'twilio';
+const Twilio = require('twilio');
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 const twilioClient = Twilio(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
